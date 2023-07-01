@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: #13538b;
+            margin: 0;
+        }
+
+        header{
+            background-color:#aecbe4bd;
+            padding: 10px;
+            margin: 1px;
+            text-align: center;
+        }
+        nav{
+            background-color: #13538b7a;
+            box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.662);
+        }
+        nav > a{
+            text-decoration: none;
+            color: chartreuse;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration:  underline;
+        }
+
+        main{
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+            border-radius:  25px;
+        }
+        /*
+        SEQUÊNCIA <<VERTICES ARREDONDADOS>> :
+        border-top-left-radius: 33px;
+        border-top-right-radius: 33px;
+        border-bottom-right-radius: 33px;
+        border-bottom-left-radius: 33px;
+
+        border-radius:33px 40px
+        */
+
+        article{
+            background-color: #d2dfeb;
+            padding: 5px;
+            box-shadow:inset 0px 9px 10px black;
+        }
+        article > aside{
+            background-color: #8614a2;
+        }
+
+        footer{
+            background-color: black;
+            color:#ffffff;
+            text-align: center;
+            padding: 1px;
+        }
+        footer > p {
+            margin: 4px;
+        }
+
+
+        div#bola{
+           background-color: deeppink;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>finanças</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas velit eveniet minus totam architecto excepturi expedita, provident aspernatur rem perspiciatis exercitationem suscipit distinctio ad in nemo facilis voluptates dolor.
+                </p>
+                <aside>
+                    <p>artigo escrito por thomas santana</p>
+                </aside>
+            </article>
+        </section>
+                 <br>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptas fugiat delectus eum facere tempora inventoreart adipisci cupiditate. Quos perferendis ipsa possimus architecto cumque dicta, quas quasi esse non adipisci?</p>
+                <aside>
+                    <p>artigo escrito por José da Silva</p>
+                </aside>
+                <div id="bola"></div>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>DESENVOLVIDO PELO DEV CIBERSEGURANÇA ENGENHEIRO COMPUTACIONAL LUIS.</p>
+    </footer>
+</body>
+</html>
